@@ -27,7 +27,11 @@ const ContactMeTemplate = () => {
           value={email}
           onChange={({ target }) => setEmail(target.value)}
         />
-        <textarea value={message} onChange={({ target }) => setMessage(target.value)} />
+        <textarea
+          placeholder="Message"
+          value={message}
+          onChange={({ target }) => setMessage(target.value)}
+        />
         <button>Submit Message</button>
       </Page>
     </Layout>

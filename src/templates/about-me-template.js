@@ -12,15 +12,22 @@ const AboutMeTemplate = () => {
     <Layout title={`About Me - ${title}`} description={subtitle}>
       <Sidebar />
       <Page title="About Me">
-        I'm a Javascript specialist, specialized in Web application development.
-
-        During my career, I mostly helped small businesses and startups to build their minimum valuable products and always tried to build high quality, scalable and maintainable tech which meets modern software requirements.
-
-        My number one goal is to work with a team of communicative and skilled people so I always expect to be in an organization which includes those values in its development culture.
-
-        From the large web application development toolset, I picked Node.js and React.Js technologies because of their simple and scalable nature.
-
-        My Core Skills are Node.js, MySQL/PostgreSQL, React.js, Mocha, Jest.
+        <p>
+          Hello, my name is Arthur. I'm a Web Application Developer.
+        </p>
+        <p>
+          During my career, I mostly helped small businesses and startups to build their minimum valuable products
+          and always did my best to build high quality technology which meets modern software development requirements.
+        </p>
+        <p>
+          My number one goal is to work with a team of communicative and skilled people.
+        </p>
+        <p>
+          From the large web application development toolset, I picked Node.js and React.Js technologies because of their simple and scalable nature.  
+        </p>
+        <p>
+          My Core Skills are Node.js, MongoDB, React.js and Gatsby.
+        </p>
       </Page>
     </Layout>
   );
