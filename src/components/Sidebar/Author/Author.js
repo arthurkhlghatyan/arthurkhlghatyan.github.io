@@ -1,6 +1,7 @@
 // @flow strict
 import React from 'react';
 import { withPrefix, Link } from 'gatsby';
+import Img from 'gatsby-image';
 import styles from './Author.module.scss';
 
 type Props = {
@@ -11,10 +12,10 @@ type Props = {
   isIndex: ?boolean
 };
 
-const Author = ({ author, isIndex }: Props) => (
+const Author = ({ author, isIndex, photo }: Props) => (
   <div className={styles['author']}>
     <Link to="/">
-      Author photo comes here
+      <Img className={styles['author__photo']} fixed={photo.childImageSharp.fixed} />
     </Link>
 
     { isIndex === true ? (
