@@ -180,7 +180,7 @@ module.exports = {
         background_color: '#FFF',
         theme_color: '#223B4C',
         display: 'standalone',
-        icon: 'src/assets/photos/profile-photo.png'
+        icon: 'src/assets/photos/gatsby-icon.png'
       },
     },
     'gatsby-plugin-offline',
