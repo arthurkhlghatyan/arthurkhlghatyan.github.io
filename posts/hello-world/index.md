@@ -1,15 +1,14 @@
 ---
-title: Hello World 1 
-date: "2019-09-08T23:46:37.121Z"
+title: Hello World 
+date: "2019-09-11T10:33:00.121Z"
 template: "post"
 draft: false
-slug: "/hello-world-post"
+slug: "/hello-world"
 category: "General"
-description: "Description of hello world post"
+description: ""
 tags:
   - "General"
 ---
 
-Hello World Post Content
-![Awesome image](./image-2.jpg)
+Hello World by Arthur K.
 

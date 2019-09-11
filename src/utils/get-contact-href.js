@@ -21,6 +21,9 @@ const getContactHref = (name: string, contact: string) => {
     case 'facebook':
       href = `https://www.facebook.com/${contact}`;
       break;
+    case 'angelist':
+      href = `https://angel.co/${contact}`;
+      break;
     default:
       href = contact;
       break;

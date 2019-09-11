@@ -23,6 +23,9 @@ const getIcon = (name: string) => {
     case 'facebook':
       icon = ICONS.FACEBOOK;
       break;
+    case 'angelist':
+      icon = ICONS.ANGELIST;
+      break;
     default:
       icon = {};
       break;

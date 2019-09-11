@@ -1,5 +1,6 @@
 // @flow strict
 import React, { useState } from 'react';
+import { init, send } from 'emailjs-com';
 import Sidebar from '../components/Sidebar';
 import Layout from '../components/Layout';
 import Page from '../components/Page';
@@ -10,13 +11,29 @@ const ContactMeTemplate = () => {
   const [ name, setName ] = useState('');
   const [ email, setEmail ] = useState('');
   const [ message, setMessage ] = useState('');
+  const [ error, setError ] = useState('');
 
-  console.log(name, email, message);
+  const submitMessage = async () => {
+    init('user_vsPR1TroUrLfTA9TiGFcw');
+
+    const params = {
+      name,
+      email,
+      message,
+    };
+
+    try {
+      await send('gmail', 'personal_blog', params);
+    } catch (error) {
+      setError('Error occurred while sending an email');
+    }
+  };
 
   return (
     <Layout title={`Contact Me - ${title}`} description={subtitle}>
       <Sidebar />
       <Page title="Contact Me">
+        { error === '' ? null : error }
         <input
           placeholder="Full Name"
           value={name}
@@ -32,7 +49,7 @@ const ContactMeTemplate = () => {
           value={message}
           onChange={({ target }) => setMessage(target.value)}
         />
-        <button>Submit Message</button>
+        <button onClick={submitMessage}>Submit Message</button>
       </Page>
     </Layout>
   );

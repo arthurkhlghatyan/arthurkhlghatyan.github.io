@@ -8,7 +8,7 @@ type Props = {
 
 const Copyright = ({ copyright }: Props) => (
   <div className={styles['copyright']}>
-    {copyright}
+    Powered by <a target="_blank" href="https://www.gatsbyjs.org/">Gatsby</a>.
   </div>
 );
 
