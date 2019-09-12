@@ -8,75 +8,120 @@ import { useSiteMetadata } from '../hooks';
 import { isEmpty, isEmail } from '../utils/validators';
 
 const ContactMeTemplate = () => {
-  const { title, subtitle } = useSiteMetadata();
-  // Input fields: name, e-mail, message
-  const [ name, setName ] = useState('');
+  const { title, subtitle, author } = useSiteMetadata();
+  // Input fields: fullName, e-mail, message
+  const [ fullName, setFullName ] = useState('');
   const [ email, setEmail ] = useState('');
   const [ message, setMessage ] = useState('');
   const [ errors, setErrors ] = useState([]);
 
+  // Form state items
+  const [ isSubmitted, setIsSubmitted ] = useState(false);
+  const [ isSending, setIsSending ] = useState(false);
+  const [ isSent, setIsSent ] = useState(false);
+  const [ emailErr, setEmailErr ] = useState(false);
+
   // Creates params object to hold items in one container
   const params = {
-    name,
+    fullName,
     email,
     message,
   };
 
+  // Item validation handlers
   const isValid = {
-    name: (value) => !isEmpty(value),
+    fullName: (value) => !isEmpty(value),
     email: (value) => !isEmpty(value) && isEmail(value),
     message: (value) => !isEmpty(value),
   };
 
+  const errorMessage = `Oops! couldn't send the email. Please send me a one at - ${author.contacts.email}`;
+
+  const renderButton = () => {
+    if (isSent) {
+      return <button disabled>Sent</button>;
+    } else if (isSending) {
+      return <button disabled>Sending...</button>;
+    } else {
+      return <button onClick={sendMessage}>Send Message</button>;
+    }
+  };
+
   const validate = () => {
-    const items = ['name', 'email', 'message'];
+    const items = ['fullName', 'email', 'message'];
+    const errors = [];
 
     for (let i = 0; i < items.length; i += 1) {
       const itemName = items[i];
 
       if (!isValid[itemName](params[itemName])) {
-        setErrors(...errors, itemName);
+        errors.push(itemName);
       }
     }
+
+    setErrors(errors);
+
+    return errors;
+  };
+
+  const errorClassName = (itemName) => {
+    return isSubmitted && errors.includes(itemName) ? 'has-error' : '';
   };
 
   const sendMessage = async () => {
+    setIsSubmitted(true);
+
+    // Validate form.
+    const errors = validate();
+
+    // Terminate execution if errors were found
+    if (errors.length) {
+      return;
+    } else {
+      setIsSending(true);
+    }
+
     // Init emailjs.com SDK
     init('user_vsPR1TroUrLfTA9TiGFcw');
 
-
-
-
-
-
-    // try {
+    try {
       // Send e-mail
-      // await send('gmail', 'personal_blog', params);
-    // } catch (error) {
-      // console.log(error);
-    // }
+      await send('gmail', 'personal_blog', params);
+
+      setIsSending(false);
+      setIsSent(true);
+    } catch {
+      setEmailErr(true);
+      setIsSending(false);
+    }
   };
 
   return (
     <Layout title={`Contact Me - ${title}`} description={subtitle}>
       <Sidebar />
       <Page title="Contact Me">
+        <p className="error-message">
+          { !emailErr ? <span>&nbsp;</span> : errorMessage }
+        </p>
         <input
           placeholder="John Doe"
-          value={name}
-          onChange={({ target }) => setName(target.value)}
+          value={fullName}
+          onChange={({ target }) => setFullName(target.value)}
+          className={errorClassName('fullName')}
         />
         <input
           placeholder="foo@bar.com"
           value={email}
           onChange={({ target }) => setEmail(target.value)}
+          className={errorClassName('email')}
         />
         <textarea
           placeholder="Hi Arthur! Let's get in touch."
           value={message}
           onChange={({ target }) => setMessage(target.value)}
+          className={errorClassName('message')}
         />
-        <button onClick={sendMessage}>Send Message</button>
+        {renderButton()}
       </Page>
     </Layout>
   );
