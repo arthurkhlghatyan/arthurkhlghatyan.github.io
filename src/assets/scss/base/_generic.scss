@@ -178,9 +178,14 @@ input, textarea {
   font-size: 1rem;
   font-family: $typographic-font-family;
   color: $color-base;
-  border-bottom: 1px solid lighten($color-base, 20%);
+  border-bottom: 1px solid $color-gray-border;
   padding: 10px 0;
   height: 35px;
+  margin-bottom: 30px;
+
+  &.has-error {
+    border-color: $color-error;
+  }
 }
 
 textarea {
@@ -190,22 +195,36 @@ textarea {
 
 button {
   appearance: none;
-  box-shadow: none;
-  border: none;
+  background: none;
+  cursor: pointer;
   outline: none;
   display: block;
-  cursor: pointer;
-  height: 35px;
-  line-height: 2.1875rem;
-  color: rgb(34, 59, 76);
-  font-size: 1rem;
+  position: relative;
+  top: 0px;
+  height: $button-height;
+  padding: 0 24px;
+  line-height: $button-height;
+  text-align: center;
+  color: $color-base;
+  border: 1px solid $color-gray-border;
+  border-radius: $button-border-radius;
   font-family: $typographic-font-family;
+  font-size: $typographic-base-font-size;
   font-weight: normal;
-  padding: 0px 1.5rem;
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgb(250, 252, 253);
-  border-image: initial;
-  width: 100%;
-  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  @include margin-top(1);
+
+  &:disabled {
+    color: lighten($color-base, 18%);
+  }
+
+  &:hover:not(:disabled) {
+    color: $color-primary;
+  }
+
+  &:active:not(:disabled) {
+    color: $color-primary;
+    top: 3px;
+  }
 }

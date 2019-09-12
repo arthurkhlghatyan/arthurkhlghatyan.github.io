@@ -5,51 +5,78 @@ import Sidebar from '../components/Sidebar';
 import Layout from '../components/Layout';
 import Page from '../components/Page';
 import { useSiteMetadata } from '../hooks';
+import { isEmpty, isEmail } from '../utils/validators';
 
 const ContactMeTemplate = () => {
   const { title, subtitle } = useSiteMetadata();
+  // Input fields: name, e-mail, message
   const [ name, setName ] = useState('');
   const [ email, setEmail ] = useState('');
   const [ message, setMessage ] = useState('');
-  const [ error, setError ] = useState('');
+  const [ errors, setErrors ] = useState([]);
 
-  const submitMessage = async () => {
+  // Creates params object to hold items in one container
+  const params = {
+    name,
+    email,
+    message,
+  };
+
+  const isValid = {
+    name: (value) => !isEmpty(value),
+    email: (value) => !isEmpty(value) && isEmail(value),
+    message: (value) => !isEmpty(value),
+  };
+
+  const validate = () => {
+    const items = ['name', 'email', 'message'];
+
+    for (let i = 0; i < items.length; i += 1) {
+      const itemName = items[i];
+
+      if (!isValid[itemName](params[itemName])) {
+        setErrors(...errors, itemName);
+      }
+    }
+  };
+
+  const sendMessage = async () => {
+    // Init emailjs.com SDK
     init('user_vsPR1TroUrLfTA9TiGFcw');
 
-    const params = {
-      name,
-      email,
-      message,
-    };
 
-    try {
-      await send('gmail', 'personal_blog', params);
-    } catch (error) {
-      setError('Error occurred while sending an email');
-    }
+
+
+
+
+    // try {
+      // Send e-mail
+      // await send('gmail', 'personal_blog', params);
+    // } catch (error) {
+      // console.log(error);
+    // }
   };
 
   return (
     <Layout title={`Contact Me - ${title}`} description={subtitle}>
       <Sidebar />
       <Page title="Contact Me">
-        { error === '' ? null : error }
         <input
-          placeholder="Full Name"
+          placeholder="John Doe"
           value={name}
           onChange={({ target }) => setName(target.value)}
         />
         <input
-          placeholder="E-mail"
+          placeholder="foo@bar.com"
           value={email}
           onChange={({ target }) => setEmail(target.value)}
         />
         <textarea
-          placeholder="Message"
+          placeholder="Hi Arthur! Let's get in touch."
           value={message}
           onChange={({ target }) => setMessage(target.value)}
         />
-        <button onClick={submitMessage}>Submit Message</button>
+        <button onClick={sendMessage}>Send Message</button>
       </Page>
     </Layout>
   );

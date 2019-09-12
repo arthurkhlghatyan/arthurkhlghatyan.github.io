@@ -31,7 +31,7 @@ module.exports = {
       email: 'arthur.khlghatyan@gmail.com',
       facebook: 'arthur.khlghatyan.1',
       telegram: 'arthurkhlghatyan',
-      twitter: 'arthurkhl',
+      twitter: '___arthurk',
       github: 'arthurkhlghatyan',
       linkedin: 'arthurkhlghatyan',
       angelist: 'arthur-khlghatyan'
