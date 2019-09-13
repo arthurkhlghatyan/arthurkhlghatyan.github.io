@@ -7,9 +7,7 @@ test('getIcon', () => {
   expect(getIcon('github')).toBe(ICONS.GITHUB);
   expect(getIcon('telegram')).toEqual(ICONS.TELEGRAM);
   expect(getIcon('email')).toEqual(ICONS.EMAIL);
-  expect(getIcon('rss')).toEqual(ICONS.RSS);
   expect(getIcon('linkedin')).toEqual(ICONS.LINKEDIN);
-  expect(getIcon('instagram')).toEqual(ICONS.INSTAGRAM);
   expect(getIcon('facebook')).toEqual(ICONS.FACEBOOK);
   expect(getIcon('angelist')).toEqual(ICONS.ANGELIST);
 });

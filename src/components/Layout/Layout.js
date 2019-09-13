@@ -1,9 +1,7 @@
 // @flow strict
 import React from 'react';
 import Helmet from 'react-helmet';
-import { withPrefix } from 'gatsby';
 import type { Node as ReactNode } from 'react';
-import { useSiteMetadata } from '../../hooks';
 import styles from './Layout.module.scss';
 
 type Props = {
@@ -16,23 +14,19 @@ const Layout = ({
   children,
   title,
   description,
-}: Props) => {
-  const { author, url } = useSiteMetadata();
-
-  return (
-    <div className={styles.layout}>
-      <Helmet>
-        <html lang="en" />
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        <meta property="og:site_name" content={title} />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={description} />
-      </Helmet>
-      {children}
-    </div>
-  );
-};
+}: Props) => (
+  <div className={styles.layout}>
+    <Helmet>
+      <html lang="en" />
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <meta property="og:site_name" content={title} />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+    </Helmet>
+    {children}
+  </div>
+);
 
 export default Layout;

@@ -22,6 +22,15 @@ export type PageContext = {
   hasNextPage: boolean
 };
 
+export type ImageSharp = {
+  childImageSharp: {
+    fixed: {
+      src: string,
+      srcSet: string,
+    }
+  }
+}
+
 export type Node = {
   fields: {
     slug: string,

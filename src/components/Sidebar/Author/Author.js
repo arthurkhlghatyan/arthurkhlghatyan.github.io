@@ -1,15 +1,17 @@
 // @flow strict
 import React from 'react';
-import { withPrefix, Link } from 'gatsby';
+import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 import styles from './Author.module.scss';
+import type { ImageSharp } from '../../../types';
 
 type Props = {
   author: {
     name: string,
     bio: string,
   },
-  isIndex: ?boolean
+  isIndex: ?boolean,
+  photo: ImageSharp,
 };
 
 const Author = ({ author, isIndex, photo }: Props) => (

@@ -7,10 +7,17 @@ describe('Author', () => {
   const props = {
     author: {
       name: 'test',
-      photo: '/photo.png',
       bio: 'test'
     },
-    isIndex: false
+    isIndex: false,
+    photo: {
+      childImageSharp: {
+        fixed: {
+          src: 'profile-photo.png',
+          srcSet: 'profile-photo.png'
+        }
+      }
+    }
   };
 
   it('renders correctly', () => {

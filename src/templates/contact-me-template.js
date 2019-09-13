@@ -10,16 +10,16 @@ import { isEmpty, isEmail } from '../utils/validators';
 const ContactMeTemplate = () => {
   const { title, subtitle, author } = useSiteMetadata();
   // Input fields: fullName, e-mail, message
-  const [ fullName, setFullName ] = useState('');
-  const [ email, setEmail ] = useState('');
-  const [ message, setMessage ] = useState('');
-  const [ errors, setErrors ] = useState([]);
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [errors, setErrors] = useState([]);
 
   // Form state items
-  const [ isSubmitted, setIsSubmitted ] = useState(false);
-  const [ isSending, setIsSending ] = useState(false);
-  const [ isSent, setIsSent ] = useState(false);
-  const [ emailErr, setEmailErr ] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSending, setIsSending] = useState(false);
+  const [isSent, setIsSent] = useState(false);
+  const [emailErr, setEmailErr] = useState(false);
 
   // Creates params object to hold items in one container
   const params = {
@@ -40,11 +40,13 @@ const ContactMeTemplate = () => {
   const renderButton = () => {
     if (isSent) {
       return <button disabled>Sent</button>;
-    } else if (isSending) {
-      return <button disabled>Sending...</button>;
-    } else {
-      return <button onClick={sendMessage}>Send Message</button>;
     }
+
+    if (isSending) {
+      return <button disabled>Sending...</button>;
+    }
+
+    return <button onClick={sendMessage}>Send Message</button>;
   };
 
   const validate = () => {
@@ -64,9 +66,9 @@ const ContactMeTemplate = () => {
     return errors;
   };
 
-  const errorClassName = (itemName) => {
+  function errorClassName(itemName) {
     return isSubmitted && errors.includes(itemName) ? 'has-error' : '';
-  };
+  }
 
   const sendMessage = async () => {
     setIsSubmitted(true);
@@ -77,9 +79,9 @@ const ContactMeTemplate = () => {
     // Terminate execution if errors were found
     if (errors.length) {
       return;
-    } else {
-      setIsSending(true);
     }
+
+    setIsSending(true);
 
     // Init emailjs.com SDK
     init('user_vsPR1TroUrLfTA9TiGFcw');

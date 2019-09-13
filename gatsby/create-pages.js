@@ -37,7 +37,7 @@ const createPages = async ({ graphql, actions }) => {
   createPage({
     path: '/contact-me',
     component: path.resolve('./src/templates/contact-me-template.js')
-  });  
+  });
 
   // Posts and pages from markdown
   const result = await graphql(`
