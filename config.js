@@ -4,7 +4,7 @@ module.exports = {
   url: 'https://arthurkhlghatyan.github.io',
   pathPrefix: '/',
   title: 'Arthur K.',
-  subtitle: 'Web application developer',
+  subtitle: 'Digital nomad',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
@@ -26,7 +26,7 @@ module.exports = {
   ],
   author: {
     name: 'Arthur K.',
-    bio: 'Web Application Developer',
+    bio: 'Digital nomad',
     contacts: {
       email: 'arthur.khlghatyan@gmail.com',
       facebook: 'arthur.khlghatyan.1',

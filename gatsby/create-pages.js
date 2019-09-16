@@ -47,9 +47,6 @@ const createPages = async ({ graphql, actions }) => {
       ) {
         edges {
           node {
-            frontmatter {
-              template
-            }
             fields {
               slug
             }
