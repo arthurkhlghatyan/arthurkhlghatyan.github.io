@@ -28,6 +28,8 @@
   }
 
   &__subtitle {
+    cursor: pointer;
+    user-select: none;
     @include line-height(1);
     @include margin-bottom(1)
   }
