@@ -32,7 +32,7 @@ module.exports = {
     name: 'Arthur K.',
     bio: [
       'Digital nomad',
-      'MERN Stack Developer',
+      'Web Application Developer',
       `Currently Studying
         <a
           rel="noopener noreferrer"
