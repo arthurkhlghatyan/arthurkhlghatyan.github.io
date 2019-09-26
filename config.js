@@ -55,7 +55,7 @@ module.exports = {
       twitter: '___arthurk',
       github: 'arthurkhlghatyan',
       linkedin: 'arthurkhlghatyan',
-      angelist: 'arthur-khlghatyan'
+      angelist: 'arthurkhlghatyan'
     }
   }
 };
