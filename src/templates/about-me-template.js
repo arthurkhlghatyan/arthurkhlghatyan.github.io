@@ -74,10 +74,11 @@ const AboutMeTemplate = () => {
           </a>
         </h4>
         Everyone who ever used GraphQL will confirm how clean and well-documented is the API interface compared to traditional REST approach.
-        Besides the ability to aggregate multiple resource in a single request and easy to use developer tool make GraphQL modern and powerful tool to build great APIs.
+        Also the ability to aggregate multiple resource in a single request and easy to use developer tool make GraphQL modern and powerful tool to build great APIs.
 
         <p>
-          You may ask yourself - Is this guy the type of programmers who code 24/7 - (the time spend on sleeping + eating)? The answer is no. 
+          You may ask yourself - Is this guy the type of programmers who code 24/7 - (the time spent on sleeping + eating)? The answer is no.
+          The thing that I like mostly is hanging out with friends in a nice lightsome cafe, also like to drink beer (Though was a wine fun a while ago :)).
         </p>
 
         <p>
