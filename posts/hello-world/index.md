@@ -1,11 +1,13 @@
 ---
 title: Hello World Or Why I'm writing this blog at all?
-date: "2019-09-11T10:33:00.121Z"
+date: "2019-09-26T15:35:00.121Z"
 draft: false
 slug: "/hello-world"
-category: "General"
+category: "Writing"
 description: ""
 tags:
-  - "Hello World"
+  - "Writing"
 ---
-Hello World post
+This article is still in draft state.
+
+You can see the title to stay tuned for the upcoming post.
