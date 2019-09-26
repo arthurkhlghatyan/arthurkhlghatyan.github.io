@@ -43,17 +43,16 @@ const AboutMeTemplate = () => {
           Though <a target="_blank" href="https://en.wikipedia.org/wiki/Recreational_vehicle">recreational vehicles</a> aren't my thing, but the definition is mostly about me.
 
           After a year and half I started to work as a freelancer.
-          I discovered that the freedom to manage my schedule and the projects I'm going to work on came with key benefits - which are improved decision making ability, productivity and more free time to spend on hobbies.
+          I discovered that the freedom to manage my schedule and the projects I'm going to work on came with key benefits, which are - improved decision making ability, productivity and more free time to spend on hobbies.
         </p>
         <p>
-          Of course this kind of lifestyle also has some serious disatvantages (I'm going to cover them in future blog post and also going to share my experience and knowledge about remote work. So stay tuned!) but I managed to adapt.
+          Of course this kind of lifestyle also has some serious disatvantages (I'm going to cover them in future blog post and also going to share my experience and knowledge about remote work. So stay tuned!) but I managed to find solutions for those.
         </p>
 
         <p>
           Already, over 3 years I worked on different projects, built MVPs and learned the technologies I was excited about and also contributed to some accomplished projects.
           (I'll get a bit lazy here and ask you to check my <a target="_blank" href="https://www.linkedin.com/in/arthurkhlghatyan">LinkedIn</a> to see my experience in detail)
-          Not to mention that published a piece of
-          <a target="_blank" href="https://github.com/arthurkhlghatyan">open source</a>.
+          Not to mention that published a piece of <a target="_blank" href="https://github.com/arthurkhlghatyan">open source</a>.
         </p>
 
         <p>
@@ -66,9 +65,8 @@ const AboutMeTemplate = () => {
           </a>
         </h4>
         The first thing that comes to my head when I talk about Gatsby is the <a href="https://jamstack.org/">JAMStack</a>.
-        Everything there is the JavaScript APIs and the markup. No reliance to the back-end language, server-side generated pages. Don't want to talk about CMSs.
-        Besides that it is based on React I also like image optimization library that comes by default, the usage of GraphQL to query metadata and assets and mobile-first approach
-        (Configurations for PWA creation and offline-support are done initially).
+        Everything there is the JavaScript APIs and the markup. No reliance to the back-end language, server-side generated pages.
+        Besides that it is based on React and I also like image optimization library that comes by default, the usage of GraphQL to query APIs and the mobile-first approach.
 
         <h4>
           <a href="https://www.gatsbyjs.org/">
@@ -76,23 +74,10 @@ const AboutMeTemplate = () => {
           </a>
         </h4>
         Everyone who ever used GraphQL will confirm how clean and well-documented is the API interface compared to traditional REST approach.
-        Besides the ability to aggregate multiple resource in a single request and easy to use developer tool make GraphQL modern and powerful tool to build great apps.
-
-
-        <h4>
-          <a href="https://nodejs.org/en/">
-            Node.js
-          </a>
-        </h4>
-        Node.js is a cool thing
-
-        <h4>
-          <a href="https://www.mongodb.com/">MongoDB</a>
-        </h4>
-        MongoDB too.
+        Besides the ability to aggregate multiple resource in a single request and easy to use developer tool make GraphQL modern and powerful tool to build great APIs.
 
         <p>
-          You may ask yourself - Is this guy the type of programmers who code 24/7 - (the time spend on sleeping + eating)? The answer is no.
+          You may ask yourself - Is this guy the type of programmers who code 24/7 - (the time spend on sleeping + eating)? The answer is no. 
         </p>
 
         <p>
