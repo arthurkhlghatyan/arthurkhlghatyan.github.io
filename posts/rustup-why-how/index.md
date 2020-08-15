@@ -2,7 +2,7 @@
 title: How to get started with Rust?
 date: "2020-08-16T15:35:00.121Z"
 draft: false
-slug: "/how֊to-rustup"
+slug: "/how-to-rustup"
 category: "Rust"
 description: My way of becoming Rustacean
 tags:
