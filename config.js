@@ -32,13 +32,13 @@ module.exports = {
     name: 'Arthur K.',
     bio: [
       'Digital nomad',
-      'Web Application Developer',
+      'Full Stack Developer',
       `Currently Studying
         <a
           rel="noopener noreferrer"
           target="_blank"
           href="https://github.com/arthurkhlghatyan/ideal-eureka">
-          Java
+          Rust
         </a>`,
       'Right! changes when you click on it',
       'Funny huh?',
