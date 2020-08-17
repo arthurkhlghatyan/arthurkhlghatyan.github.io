@@ -9,7 +9,8 @@ tags:
   - "Rust"
   - "CS"
   - "Review"
-socialImage: "./stock-photo.jpg"
+socialImage: "/media/stock-photo.jpg"
+template: "post"
 ---
 - [Intro](#intro)
 - [The Book](#the-book)

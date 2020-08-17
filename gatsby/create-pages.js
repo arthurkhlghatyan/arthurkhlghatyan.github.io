@@ -27,12 +27,6 @@ const createPages = async ({ graphql, actions }) => {
     component: path.resolve('./src/templates/categories-list-template.js')
   });
 
-  // About me
-  createPage({
-    path: '/about-me',
-    component: path.resolve('./src/templates/about-me-template.js')
-  });
-
   // Contact me
   createPage({
     path: '/contact-me',
@@ -50,6 +44,9 @@ const createPages = async ({ graphql, actions }) => {
             fields {
               slug
             }
+            frontmatter {
+              template
+            }
           }
         }
       }
@@ -58,13 +55,20 @@ const createPages = async ({ graphql, actions }) => {
 
   const { edges } = result.data.allMarkdownRemark;
 
-  // Create post pages
   _.each(edges, (edge) => {
-    createPage({
-      path: edge.node.fields.slug,
-      component: path.resolve('./src/templates/post-template.js'),
-      context: { slug: edge.node.fields.slug }
-    });
+    if (_.get(edge, 'node.frontmatter.template') === 'page') {
+      createPage({
+        path: edge.node.fields.slug,
+        component: path.resolve('./src/templates/page-template.js'),
+        context: { slug: edge.node.fields.slug }
+      });
+    } else if (_.get(edge, 'node.frontmatter.template') === 'post') {
+      createPage({
+        path: edge.node.fields.slug,
+        component: path.resolve('./src/templates/post-template.js'),
+        context: { slug: edge.node.fields.slug }
+      });
+    }
   });
 
   // Feeds
