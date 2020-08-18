@@ -9,7 +9,7 @@ tags:
   - "Rust"
   - "CS"
   - "Review"
-socialImage: "/media/stock-photo.jpg"
+socialImage: "/media/how-to-rustup.jpg"
 template: "post"
 ---
 - [Intro](#intro)
