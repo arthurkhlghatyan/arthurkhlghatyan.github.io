@@ -17,7 +17,7 @@ template: "post"
 - [Rustlings](#rustlings)
 - [What's next](#whats-next)
 
-![Rusty lock](./stock-photo.jpg)
+![Rusty lock](./how-to-rustup.jpg)
 
 ## Intro
 Before launching [Rust Community Armenia](https://t.me/rustarmenia), I decided to write a short article giving the reader a clear path to becoming a [rustacean](https://www.rustaceans.org/).
