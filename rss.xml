@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Arthur K.]]></title><description><![CDATA[Personal website and blog]]></description><link>https://arthurkhlghatyan.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 04 Sep 2020 10:29:30 GMT</lastBuildDate><item><title><![CDATA[About me]]></title><link>https://arthurkhlghatyan.github.io/about-me</link><guid isPermaLink="false">https://arthurkhlghatyan.github.io/about-me</guid><content:encoded>&lt;p&gt;Hi, my name is Arthur! I’m a Digital Nomad.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Arthur K.]]></title><description><![CDATA[Personal website and blog]]></description><link>https://arthurkhlghatyan.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 15 Dec 2020 14:44:49 GMT</lastBuildDate><item><title><![CDATA[About me]]></title><link>https://arthurkhlghatyan.github.io/about-me</link><guid isPermaLink="false">https://arthurkhlghatyan.github.io/about-me</guid><content:encoded>&lt;p&gt;Hi, my name is Arthur! I’m a Digital Nomad.&lt;/p&gt;
 &lt;p&gt;Since you are already seeing the big picture of who am I (pls do some clicks on profile description), I’m going to tell you when it all started, what I did previously, how I am making things happen now.&lt;/p&gt;
 &lt;p&gt;I’m a self-thought programmer, in-half… I discovered the world of tech at &lt;a href=&quot;https://tumo.org/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;TUMO&lt;/a&gt; when I was 14 years old. I’ve learned and did a lot of experimentations with HTML and JavaScript and through the time started to like web development. Shortly, it became my passion.&lt;/p&gt;
 &lt;p&gt;As you may know every(almost) skilled human is in search of a job and I’m not an exception as well. I joined &lt;a href=&quot;https://www.inexxus.com/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;iNexxus&lt;/a&gt; in 2015 as a software engineer and worked on the company’s internal software which meant to improve their marketing and project management processes.&lt;/p&gt;
@@ -10,7 +10,185 @@ According to &lt;a href=&quot;https://en.wikipedia.org/wiki/Digital_nomad&quot; 
 &lt;p&gt;Already, over 4 years(at the time of writing) I’m working on different projects, building MVPs, and learning the technologies I’m excited about. (I’ll get a bit lazy here and ask you to check my &lt;a href=&quot;https://www.linkedin.com/in/arthurkhlghatyan&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;LinkedIn&lt;/a&gt; to see my experience and skills in detail).
 Not to mention that published a piece of &lt;a href=&quot;https://github.com/arthurkhlghatyan&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;open source&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;You may ask yourself - Is this guy the type of programmers who code 24/7 - (the time spent on sleeping + eating)? The answer is no. The thing that I like most is hanging out with friends in a nice lightsome cafe, also like to drink beer (Though was fun of wine a while ago :)).&lt;/p&gt;
-&lt;p&gt;So far this is it. Interested? Let’s get in &lt;a href=&quot;/contact-me&quot;&gt;touch&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to get started with Rust?]]></title><description><![CDATA[My way of becoming Rustacean]]></description><link>https://arthurkhlghatyan.github.io/how-to-rustup</link><guid isPermaLink="false">https://arthurkhlghatyan.github.io/how-to-rustup</guid><pubDate>Sun, 16 Aug 2020 15:35:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;p&gt;So far this is it. Interested? Let’s get in &lt;a href=&quot;/contact-me&quot;&gt;touch&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Easy GraphQL requests with Rust]]></title><link>https://arthurkhlghatyan.github.io/graphql-in-rust</link><guid isPermaLink="false">https://arthurkhlghatyan.github.io/graphql-in-rust</guid><pubDate>Fri, 04 Dec 2020 15:35:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#intro&quot;&gt;Intro&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#setup&quot;&gt;Setup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#preparing-query&quot;&gt;Preparing Query&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#fetching-and-displaying-data&quot;&gt;Fetching and Displaying Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#conslusion&quot;&gt;Conslusion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/fc5409eadd20ca584c797132e43787b2/d48e0/graphql-in-rust.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAQX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABVq6xkOgVP//EABoQAAIDAQEAAAAAAAAAAAAAAAECAAMREzH/2gAIAQEAAQUC9ivDY2pYSea4tej/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPwGq/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8BiP/EABkQAQADAQEAAAAAAAAAAAAAAAARITEBQf/aAAgBAQAGPwKWV6rlIS1//8QAGxAAAwEBAAMAAAAAAAAAAAAAAAERITFBUeH/2gAIAQEAAT8hddRIsqM4sPQdqDcwQm8rtJNqs+AP/9oADAMBAAIAAwAAABDAz//EABYRAQEBAAAAAAAAAAAAAAAAAAEQEf/aAAgBAwEBPxBOR//EABYRAQEBAAAAAAAAAAAAAAAAAAEQEf/aAAgBAgEBPxAex//EABwQAQADAAIDAAAAAAAAAAAAAAEAESExQVFhkf/aAAgBAQABPxBAL6RoUv2U5KtgWHVXzE7tgYsKNKe0NlOGuFnjuGi03oz/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/fc5409eadd20ca584c797132e43787b2/77824/graphql-in-rust.webp 240w,
+/static/fc5409eadd20ca584c797132e43787b2/e7b60/graphql-in-rust.webp 480w,
+/static/fc5409eadd20ca584c797132e43787b2/64043/graphql-in-rust.webp 960w,
+/static/fc5409eadd20ca584c797132e43787b2/6ce15/graphql-in-rust.webp 1440w,
+/static/fc5409eadd20ca584c797132e43787b2/f07e4/graphql-in-rust.webp 1920w,
+/static/fc5409eadd20ca584c797132e43787b2/b7aa4/graphql-in-rust.webp 2880w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/fc5409eadd20ca584c797132e43787b2/24e5f/graphql-in-rust.jpg 240w,
+/static/fc5409eadd20ca584c797132e43787b2/fe4bd/graphql-in-rust.jpg 480w,
+/static/fc5409eadd20ca584c797132e43787b2/dff20/graphql-in-rust.jpg 960w,
+/static/fc5409eadd20ca584c797132e43787b2/75e15/graphql-in-rust.jpg 1440w,
+/static/fc5409eadd20ca584c797132e43787b2/32ee3/graphql-in-rust.jpg 1920w,
+/static/fc5409eadd20ca584c797132e43787b2/d48e0/graphql-in-rust.jpg 2880w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/fc5409eadd20ca584c797132e43787b2/dff20/graphql-in-rust.jpg&quot;
+          alt=&quot;Stock photo&quot;
+          title=&quot;Stock photo&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;intro&quot;&gt;&lt;a href=&quot;#intro&quot; aria-label=&quot;intro permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Intro&lt;/h2&gt;
+&lt;p&gt;In this tutorial-style article, I’m going to show you how to use &lt;a href=&quot;https://crates.io/crates/gql_client&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;gql_client&lt;/a&gt; crate for making requests to GraphQL APIs from your rust application. &lt;/p&gt;
+&lt;p&gt;We will use &lt;a href=&quot;https://graphqlzero.almansi.me/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;GraphQLZero&lt;/a&gt; - fake, online API for testing requests. I also assume that you already have rust installed (If not, just use &lt;a href=&quot;https://rustup.rs/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;rustup&lt;/a&gt;), you understand the basics of the &lt;a href=&quot;/how-to-rustup&quot;&gt;language&lt;/a&gt; and its &lt;a href=&quot;https://rust-lang.github.io/async-book/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;asynchronous&lt;/a&gt; programming concepts.&lt;/p&gt;
+&lt;p&gt;As a result, we will build a simple application that fetches the user list from API and outputs it in the console. &lt;/p&gt;
+&lt;h2 id=&quot;setup&quot;&gt;&lt;a href=&quot;#setup&quot; aria-label=&quot;setup permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Setup&lt;/h2&gt;
+&lt;p&gt;So let’s go ahead and set up a new cargo project!&lt;/p&gt;
+&lt;p&gt;First of all, create a new binary application. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;cargo new gql-client-test &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; gql-client-test&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then add the following dependencies in Cargo.toml file and let’s talk about them a bit.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;toml&quot;&gt;&lt;pre class=&quot;language-toml&quot;&gt;&lt;code class=&quot;language-toml&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token table class-name&quot;&gt;dependencies&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token key property&quot;&gt;gql_client&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;0.2.1&quot;&lt;/span&gt;
+&lt;span class=&quot;token key property&quot;&gt;serde&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token key property&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;1.0&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token key property&quot;&gt;features&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;derive&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token key property&quot;&gt;tokio&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token key property&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;0.2&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token key property&quot;&gt;features&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;full&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;serde&lt;/strong&gt; - Though the work related to JSON is done internally by &lt;a href=&quot;https://crates.io/crates/reqwest&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;reqwest&lt;/a&gt; we will still need derive feature of serde to make our structs compatible for serialization and deserialization.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;tokio&lt;/strong&gt; - Tokio will serve as our runtime for asynchronous code execution. Though there are a lot of other implementations of futures we will go by the standard choice in our example.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As a final step of our setup, we will replace the main function with one written below to mark an entry point for tokio to execute. So go ahead and paste this in the &lt;strong&gt;src/main.rs&lt;/strong&gt; file.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;rust&quot;&gt;&lt;pre class=&quot;language-rust&quot;&gt;&lt;code class=&quot;language-rust&quot;&gt;&lt;span class=&quot;token attribute attr-name&quot;&gt;#[tokio::main]&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;-&gt;&lt;/span&gt; Result&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Box&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;dyn&lt;/span&gt; std&lt;span class=&quot;token punctuation&quot;&gt;::&lt;/span&gt;error&lt;span class=&quot;token punctuation&quot;&gt;::&lt;/span&gt;Error&lt;span class=&quot;token operator&quot;&gt;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;Ok&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;preparing-query&quot;&gt;&lt;a href=&quot;#preparing-query&quot; aria-label=&quot;preparing query permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Preparing Query&lt;/h2&gt;
+&lt;p&gt;Before making a request let’s construct query string and data structures for mapping response data. In our case, we will query the list of users and 3 data fields for each - id, name, and username.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;rust&quot;&gt;&lt;pre class=&quot;language-rust&quot;&gt;&lt;code class=&quot;language-rust&quot;&gt;&lt;span class=&quot;token attribute attr-name&quot;&gt;#[tokio::main]&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;-&gt;&lt;/span&gt; Result&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Box&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;dyn&lt;/span&gt; std&lt;span class=&quot;token punctuation&quot;&gt;::&lt;/span&gt;error&lt;span class=&quot;token punctuation&quot;&gt;::&lt;/span&gt;Error&lt;span class=&quot;token operator&quot;&gt;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// Add this code in main function&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; query &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &quot;
+    query UserListQuery &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      users &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        data &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          id
+          name
+          username
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &quot;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token function&quot;&gt;Ok&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The next step is creating correct data structures. Each of them will derive Debug and Deserialize traits for respective purposes, also we will make them a bit more predictable using generics (See NodeList&amp;#x3C;T&gt;). As the query method of gql_client returns the contents of the data field, we won’t need an additional struct for mapping the whole response.&lt;/p&gt;
+&lt;p&gt;Let’s put the code below at the beginning of the &lt;strong&gt;src/main.rs&lt;/strong&gt; file.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;rust&quot;&gt;&lt;pre class=&quot;language-rust&quot;&gt;&lt;code class=&quot;language-rust&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;use&lt;/span&gt; serde&lt;span class=&quot;token punctuation&quot;&gt;::&lt;/span&gt;Deserialize&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token attribute attr-name&quot;&gt;#[derive(Deserialize, Debug)]&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;struct&lt;/span&gt; User &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  id&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; String&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  name&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; String&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  username&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; String
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token attribute attr-name&quot;&gt;#[derive(Deserialize, Debug)]&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;struct&lt;/span&gt; Data &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  users&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; NodeList&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;User&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token attribute attr-name&quot;&gt;#[derive(Deserialize, Debug)]&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;struct&lt;/span&gt; NodeList&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;T&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  data&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Vec&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;T&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;fetching-and-displaying-data&quot;&gt;&lt;a href=&quot;#fetching-and-displaying-data&quot; aria-label=&quot;fetching and displaying data permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Fetching and Displaying Data&lt;/h2&gt;
+&lt;p&gt;Finally, we are ready to perform the query and output data in the console.
+Let’s start by initiating a GraphQL client instance.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;rust&quot;&gt;&lt;pre class=&quot;language-rust&quot;&gt;&lt;code class=&quot;language-rust&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;use&lt;/span&gt; serde&lt;span class=&quot;token punctuation&quot;&gt;::&lt;/span&gt;Deserialize&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Add this line under use statement on the top &lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;use&lt;/span&gt; gql_client&lt;span class=&quot;token punctuation&quot;&gt;::&lt;/span&gt;Client&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Add this lines under query str literal in main function&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; endpoint &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://graphqlzero.almansi.me/api&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; client &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Client&lt;span class=&quot;token punctuation&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;endpoint&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Assuming this part was pretty simple, move forward and put the final lines under the client
+instantiation code.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;rust&quot;&gt;&lt;pre class=&quot;language-rust&quot;&gt;&lt;code class=&quot;language-rust&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Add this code under client instantiation code&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; response &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; client&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;query&lt;span class=&quot;token punctuation&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;Data&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;query&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;unwrap&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token function&quot;&gt;println!&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;# | Name | Username&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; user &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&lt;/span&gt;response&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;users&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;data &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;println!&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;{} | {} | {}&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; user&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;id&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; user&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; user&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;username&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In the above code, we are telling rust to execute the query which is going to retrieve type Data as a response. In our case we want our program to &lt;strong&gt;panic&lt;/strong&gt; in case something wrong happens, so we are just calling &lt;strong&gt;unwrap&lt;/strong&gt; to extract the response from Result&amp;#x3C;Data, GraphQLError&gt; enum.&lt;/p&gt;
+&lt;p&gt;Finally, we can borrow the user list in the for loop and print data in a readable format. If you’ve done everything correctly you should see something like this in the console output when running &lt;strong&gt;cargo run&lt;/strong&gt;. &lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 791px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3f96ff8a95b627168757b410e346afd6/b91a0/console-output.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 49.81036662452591%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAAA6ElEQVQoz42Saw6EIAyEOc4qKA8RFfD+x+p20DU+soYfkwZCv84AQilFev6QS5KmaaKcV1rXleZ5ppQSrzPFGGlZoKXsO+doGAbq+57atiUp5SGhe03DaMgFXYAhBPJ82FpbGlExFId/zU3TFP3WZ6iw3BTGwKANhsla60vTXWdHD4dwAGeIhTiARo7qvb+4uOvfvkAs3M3CwJzTAQcYUXFPb4AHEBHhLMbEj7BfPEMxABVOu66rB8LhBtxgcIjq/Xg8SsdOq4F4AGPM0Qxhba0r9eyuBirMDrnKlHqGVDtUe5y371ELg76SgDTP4vlmbgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/3f96ff8a95b627168757b410e346afd6/77824/console-output.webp 240w,
+/static/3f96ff8a95b627168757b410e346afd6/e7b60/console-output.webp 480w,
+/static/3f96ff8a95b627168757b410e346afd6/465b7/console-output.webp 791w&quot;
+          sizes=&quot;(max-width: 791px) 100vw, 791px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/3f96ff8a95b627168757b410e346afd6/81121/console-output.png 240w,
+/static/3f96ff8a95b627168757b410e346afd6/7fcbf/console-output.png 480w,
+/static/3f96ff8a95b627168757b410e346afd6/b91a0/console-output.png 791w&quot;
+          sizes=&quot;(max-width: 791px) 100vw, 791px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/3f96ff8a95b627168757b410e346afd6/b91a0/console-output.png&quot;
+          alt=&quot;User data output in console&quot;
+          title=&quot;User data output in console&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;conslusion&quot;&gt;&lt;a href=&quot;#conslusion&quot; aria-label=&quot;conslusion permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conslusion&lt;/h2&gt;
+&lt;p&gt;The main goal of this article was to show some abilities of the rust language in web development. As you can see it gives you much more productivity and good development experience while being a lower-level language than ones that are used primarily for the web. &lt;/p&gt;
+&lt;p&gt;While being an author of the library we used I urge you to also check other libraries written for this topic (such as &lt;a href=&quot;https://github.com/graphql-rust/graphql-client&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;this&lt;/a&gt;) because you will probably need more advanced features in the future as your project grows.&lt;/p&gt;
+&lt;p&gt;In case you’ll have some opinions or feature requests about the library feel free to open an &lt;a href=&quot;https://github.com/arthurkhlghatyan/gql-client-rs/issues&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;issue&lt;/a&gt; or reach me out in community &lt;a href=&quot;https://t.me/rustarmenia&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;chat&lt;/a&gt;.  &lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to get started with Rust?]]></title><description><![CDATA[My way of becoming Rustacean]]></description><link>https://arthurkhlghatyan.github.io/how-to-rustup</link><guid isPermaLink="false">https://arthurkhlghatyan.github.io/how-to-rustup</guid><pubDate>Sun, 16 Aug 2020 15:35:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#intro&quot;&gt;Intro&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#the-book&quot;&gt;The Book&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#rustlings&quot;&gt;Rustlings&lt;/a&gt;&lt;/li&gt;
@@ -22,7 +200,7 @@ Not to mention that published a piece of &lt;a href=&quot;https://github.com/art
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/4e33feda8e66f912b0310c7458ef2bde/f7820/stock-photo.jpg&quot;
+    href=&quot;/static/4e33feda8e66f912b0310c7458ef2bde/f7820/how-to-rustup.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -33,28 +211,28 @@ Not to mention that published a piece of &lt;a href=&quot;https://github.com/art
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/4e33feda8e66f912b0310c7458ef2bde/77824/stock-photo.webp 240w,
-/static/4e33feda8e66f912b0310c7458ef2bde/e7b60/stock-photo.webp 480w,
-/static/4e33feda8e66f912b0310c7458ef2bde/64043/stock-photo.webp 960w,
-/static/4e33feda8e66f912b0310c7458ef2bde/6ce15/stock-photo.webp 1440w,
-/static/4e33feda8e66f912b0310c7458ef2bde/f07e4/stock-photo.webp 1920w,
-/static/4e33feda8e66f912b0310c7458ef2bde/a3e00/stock-photo.webp 5000w&quot;
+          srcset=&quot;/static/4e33feda8e66f912b0310c7458ef2bde/77824/how-to-rustup.webp 240w,
+/static/4e33feda8e66f912b0310c7458ef2bde/e7b60/how-to-rustup.webp 480w,
+/static/4e33feda8e66f912b0310c7458ef2bde/64043/how-to-rustup.webp 960w,
+/static/4e33feda8e66f912b0310c7458ef2bde/6ce15/how-to-rustup.webp 1440w,
+/static/4e33feda8e66f912b0310c7458ef2bde/f07e4/how-to-rustup.webp 1920w,
+/static/4e33feda8e66f912b0310c7458ef2bde/a3e00/how-to-rustup.webp 5000w&quot;
           sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/4e33feda8e66f912b0310c7458ef2bde/24e5f/stock-photo.jpg 240w,
-/static/4e33feda8e66f912b0310c7458ef2bde/fe4bd/stock-photo.jpg 480w,
-/static/4e33feda8e66f912b0310c7458ef2bde/dff20/stock-photo.jpg 960w,
-/static/4e33feda8e66f912b0310c7458ef2bde/75e15/stock-photo.jpg 1440w,
-/static/4e33feda8e66f912b0310c7458ef2bde/32ee3/stock-photo.jpg 1920w,
-/static/4e33feda8e66f912b0310c7458ef2bde/f7820/stock-photo.jpg 5000w&quot;
+          srcset=&quot;/static/4e33feda8e66f912b0310c7458ef2bde/24e5f/how-to-rustup.jpg 240w,
+/static/4e33feda8e66f912b0310c7458ef2bde/fe4bd/how-to-rustup.jpg 480w,
+/static/4e33feda8e66f912b0310c7458ef2bde/dff20/how-to-rustup.jpg 960w,
+/static/4e33feda8e66f912b0310c7458ef2bde/75e15/how-to-rustup.jpg 1440w,
+/static/4e33feda8e66f912b0310c7458ef2bde/32ee3/how-to-rustup.jpg 1920w,
+/static/4e33feda8e66f912b0310c7458ef2bde/f7820/how-to-rustup.jpg 5000w&quot;
           sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
           type=&quot;image/jpeg&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/4e33feda8e66f912b0310c7458ef2bde/dff20/stock-photo.jpg&quot;
+          src=&quot;/static/4e33feda8e66f912b0310c7458ef2bde/dff20/how-to-rustup.jpg&quot;
           alt=&quot;Rusty lock&quot;
           title=&quot;Rusty lock&quot;
           loading=&quot;lazy&quot;

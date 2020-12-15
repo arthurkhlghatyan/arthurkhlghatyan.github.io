@@ -3,11 +3,14 @@
 <url> <loc>https://arthurkhlghatyan.github.io/tags</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://arthurkhlghatyan.github.io/categories</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://arthurkhlghatyan.github.io/contact-me</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://arthurkhlghatyan.github.io/graphql-in-rust</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://arthurkhlghatyan.github.io/about-me</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://arthurkhlghatyan.github.io/how-to-rustup</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://arthurkhlghatyan.github.io/tag/cs</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://arthurkhlghatyan.github.io/tag/graph-ql</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://arthurkhlghatyan.github.io/tag/review</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://arthurkhlghatyan.github.io/tag/rust</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://arthurkhlghatyan.github.io/tag/tutorial</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://arthurkhlghatyan.github.io/category/rust</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://arthurkhlghatyan.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
